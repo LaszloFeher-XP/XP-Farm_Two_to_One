@@ -1,8 +1,7 @@
 class Kata {
 
   longest(s1, s2) {
-    const newArr = [...s1].concat([...s2]);
-    return newArr.filter(this.onlyUnique).sort().join('');
+    return [...s1].concat([...s2]).filter(this.onlyUnique).sort().join('');
   }
 
   onlyUnique(value, index, self) {

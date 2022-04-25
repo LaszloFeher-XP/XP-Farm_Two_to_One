@@ -15,6 +15,11 @@ describe('First story', () => {
     const kata = new Kata();
     expect(kata.longest('aretheyhere', 'yestheyarehere')).toStrictEqual('aehrsty');
   });
+
+  test('GIVEN loopingisfunbutdangerous, lessdangerousthancoding WHEN logic THEN returns abcdefghilnoprstu', () => {
+    const kata = new Kata();
+    expect(kata.longest('loopingisfunbutdangerous', 'lessdangerousthancoding')).toStrictEqual('abcdefghilnoprstu');
+  });
 });
 
 
