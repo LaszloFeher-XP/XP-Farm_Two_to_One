@@ -15,3 +15,4 @@
 - create tests 🚧
 - create logic 🚧
 - 1st test ❌
+- 1st test ✅
