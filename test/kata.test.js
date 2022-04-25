@@ -1,9 +1,9 @@
 const { Kata } = require('../src/kata');
 
 describe('First story', () => {
-  test('GIVEN ... WHEN ... THEN ...', () => {
+  test('GIVEN ab, cd WHEN logic THEN returns abcd', () => {
     const kata = new Kata();
-    expect(kata.func()).toStrictEqual();
+    expect(kata.longest('ab', 'cd')()).toStrictEqual('abcd');
   });
 });
 

@@ -1,5 +1,5 @@
 [![Run Tests](https://github.com/LaszloFeher-XP/XP-Farm_Two_to_One/actions/workflows/test.yml/badge.svg)](https://github.com/LaszloFeher-XP/XP-Farm_Two_to_One/actions/workflows/test.yml/badge.svg) 
-"[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LaszloFeher-XP_XP-Farm_Two_to_One&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=LaszloFeher-XP_XP-Farm_Two_to_One)" 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LaszloFeher-XP_XP-Farm_Two_to_One&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=LaszloFeher-XP_XP-Farm_Two_to_One)
 [![Open Issues](https://img.shields.io/github/issues/LaszloFeher-XP/XP-Farm_Two_to_One/badge.svg)](https://github.com/LaszloFeher-XP/XP-Farm_Two_to_One/issues) 
 
 [![Build Status](coverage/badge-branches.svg)](coverage/badge-branches.svg) 
@@ -11,27 +11,51 @@
 [Metrics report](metrics.md) 
 [Complexity report](complexity-report.md) 
 
-# KATA's name 
+# Two to One
 
-... 
+https://www.codewars.com/kata/5656b6906de340bd1b0000ac
 
 ## Instructions 
 
-... 
+Take 2 strings s1 and s2 including only letters from ato z. Return a new sorted string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
+Examples:
+```sh
+a = "xyaabbbccccdefww"
+b = "xxxxyyyyabklmopq"
+longest(a, b) -> "abcdefklmopqwxy"
+
+a = "abcdefghijklmnopqrstuvwxyz"
+longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
+```
 
 ## User Stories 
 
 ### 1. First story 
-As a ... 
-I want to ... 
-So that ... 
+As a user
+I want to get a sorted string, he longest possible, containing distinct letters - each taken only once 
+So that create the logic
 
 #### Scenarios 
 
 #### 1. 
-Given ... 
-When ... 
-Then ... 
+Given 'ab', 'cd'
+When runs the logic
+Then returns 'abcd'
+
+#### 2. 
+Given 'abade', 'cdc'
+When runs the logic
+Then returns 'abcde'
+
+#### 3. 
+Given 'aretheyhere', 'yestheyarehere'
+When runs the logic
+Then returns 'aehrsty'
+
+#### 4. 
+Given 'loopingisfunbutdangerous', 'lessdangerousthancoding'
+When runs the logic
+Then returns 'abcdefghilnoprstu'
 
 # Setting up the environment 
 
