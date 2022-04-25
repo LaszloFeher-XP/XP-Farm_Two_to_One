@@ -10,6 +10,11 @@ describe('First story', () => {
     const kata = new Kata();
     expect(kata.longest('abade', 'cdc')).toStrictEqual('abcde');
   });
+
+  test('GIVEN aretheyhere, yestheyarehere WHEN logic THEN returns aehrsty', () => {
+    const kata = new Kata();
+    expect(kata.longest('aretheyhere', 'yestheyarehere')).toStrictEqual('aehrsty');
+  });
 });
 
 
