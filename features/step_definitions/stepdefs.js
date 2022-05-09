@@ -1,5 +1,9 @@
+import { loadFeature, defineFeature } from 'jest-cucumber-fusion';
 const assert = require('assert');
 const { Given, When, Then } = require('@cucumber/cucumber');
+
+const feature = loadFeature('../two-to-one.feature');
+const { Kata } = require('../../src/kata');
 
 function isItFriday(today) {
   if (today === "Friday") {

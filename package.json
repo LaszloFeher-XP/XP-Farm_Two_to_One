@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js",
+    "test": "jest",
     "complexity": "cr src",
     "prepare": "husky install",
     "cm": "cz",
@@ -30,6 +30,8 @@
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^6.0.0",
     "jest": "^27.0.4",
+    "jest-cucumber": "^3.0.1",
+    "jest-cucumber-fusion": "^0.8.1",
     "prettier": "^2.3.2"
   },
   "husky": {
@@ -38,10 +40,14 @@
     }
   },
   "jest": {
-    "coverageReporters": [
-      "json-summary",
-      "text",
-      "lcov"
-    ]
+    "testMatch": [
+      "**/*.steps.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/"
+    ],
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   }
 }
